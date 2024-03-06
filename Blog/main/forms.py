@@ -8,7 +8,8 @@ class TextForm(forms.Form):
 
 
 class AddBlogForm(forms.ModelForm):
-    description = RichTextField()
+    # description = RichTextField()
+    description = forms.Textarea()
     
     class Meta:
         model = Blog
