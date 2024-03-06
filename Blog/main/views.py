@@ -7,7 +7,7 @@ from django.db.models import Q
 from django.contrib import messages
 from .forms import TextForm, AddBlogForm
 from django.contrib.auth.decorators import login_required
-from django.http import JsonResponse
+
 # Create your views here.
 def home(request):
     blogs=Blog.objects.order_by('-created_date')

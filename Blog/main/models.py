@@ -2,7 +2,6 @@ from django.db import models
 from user_profile.models import User
 from django.utils.text import slugify
 from .slug import generate_unique_slug
-from ckeditor.fields import RichTextField
 # Create your models here.
 
 class Category(models.Model):
